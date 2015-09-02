@@ -28,7 +28,7 @@ class SetupTestDataFunctionalSpec extends GebSpec {
             def j = [
                     widgetId: widget.id
             ]
-        when:git remote
+        when:
             def resp = rest.post("http://localhost:8080/api/v1/findwidget") {
                 contentType MediaType.APPLICATION_JSON_VALUE
                 header('Accept-Language','en')
